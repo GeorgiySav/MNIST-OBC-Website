@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.output-label {
+  float: left;
+  margin-right: 1em;
+}
+
+/*
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Canvas {
+  outline-color: black;
+  outline-style: solid;
+}
+
+.model-output {
+  float: right;
+  margin: 0em 0em 1em 1em;
+  height: 392px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.model-output li {
+  box-sizing: border-box;
+  padding: 0.5em;
+  height: 10%;
+}
+.model-output li:not(:last-child) {
+  border-bottom: 1px solid;
+}
+*/
