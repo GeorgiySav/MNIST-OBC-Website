@@ -89,7 +89,7 @@ function App() {
   };
 
   useEffect(() => {
-    const clear = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    const clear = (event: KeyboardEvent) => {
       if (event.code === "KeyC") {
         const canvas = canvasRef.current;
         if (!canvas) return;

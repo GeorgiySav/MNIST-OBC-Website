@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import {  motion, useSpring } from "framer-motion"
+import { useEffect } from "react";
+import { motion, useSpring } from "framer-motion";
 import "./LabeledBar.css";
 import uuid from "react-uuid";
 
@@ -11,7 +11,6 @@ interface LabeledBarProps {
 }
 
 function LabeledBar({ label, prev, value, max }: LabeledBarProps) {
-
   const progress = useSpring(prev, { stiffness: 15, damping: 10 });
 
   useEffect(() => {
@@ -29,9 +28,7 @@ function LabeledBar({ label, prev, value, max }: LabeledBarProps) {
           <motion.div
             className="bg-base-100 h-4 rounded"
             style={{ scaleX: progress, originX: 0 }}
-          >
-          </motion.div>
-
+          ></motion.div>
         </div>
       </div>
     </div>
